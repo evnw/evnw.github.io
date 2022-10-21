@@ -1,0 +1,98 @@
+
+body {
+    font-family: 'Inconsolata', monospace;
+    color: whitesmoke;
+    background-color: rgb(50, 50, 50);
+    /* text-rendering: optimizeLegibility; */
+    padding: 0;
+    margin: 0;
+}
+
+#name {
+    font-size: 1.75em;
+    font-weight: 1000;
+}
+
+.header {
+    margin: 5% 15% 0% 15%;
+}
+
+.header a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+.header a:hover {
+    color: white;
+}
+
+.menu {
+    padding-left: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 50px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+#content {
+    margin: 5% 0% 0% 15%;
+    display: inline-block;
+}
+
+#content > div {
+    float: left;
+    position: relative;
+    margin-right: 50px;
+}
+
+#intro {
+    margin-top: 5%;
+    width: 400px;
+    float: left;
+}
+
+#feat {
+    float: left;
+}
+
+.btns {
+    padding-left: 0;
+}
+
+.btns li {
+    display: inline;
+    margin-right: 15%;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.btns a {
+    font-size: 1.4em;
+    text-decoration: none;
+    color: lightgray;
+}
+
+.btns a:hover {
+    color: white;
+}
+
+.works img {
+    max-width: 300px;
+    max-height: 169px;
+    border: 1px groove lightgray;
+}
+
+.works {
+    text-decoration: none;
+    color: lightgray;
+    margin-right: 10%;
+}
+
+.gridConatiner {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+}

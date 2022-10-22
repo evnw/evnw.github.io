@@ -97,6 +97,10 @@ body {
     grid-gap: 30px;
 }
 
+#about {
+    width: 400px;
+}
+
 #about a {
     font-size: 1.4em;
     text-decoration: none;

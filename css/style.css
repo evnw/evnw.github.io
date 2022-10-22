@@ -96,3 +96,12 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 30px;
 }
+
+#about a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+#about a:hover {
+    color: white;
+}

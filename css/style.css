@@ -91,12 +91,6 @@ body {
     margin-right: 10%;
 }
 
-.gridConatiner {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 30px;
-}
-
 #about {
     width: 500px;
 }
@@ -117,4 +111,19 @@ footer {
     width: 100%;
     color: gray;
     text-align: center;
+}
+
+#proj {
+    margin: 5% 20% 0% 20%;
+    text-align: center;
+}
+
+video {
+    width: 480px;
+}
+
+@media only screen and (max-width: 600px) {
+    video {
+        width: 240px;
+    }
 }

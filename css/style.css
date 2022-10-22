@@ -109,3 +109,12 @@ body {
 #about a:hover {
     color: white;
 }
+
+footer {
+    position: absolute;
+    font-size: 0.8em;
+    bottom: 40px;
+    width: 100%;
+    color: gray;
+    text-align: center;
+}

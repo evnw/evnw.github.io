@@ -98,11 +98,10 @@ body {
 }
 
 #about {
-    width: 400px;
+    width: 500px;
 }
 
 #about a {
-    font-size: 1.4em;
     text-decoration: none;
     color: lightgray;
 }

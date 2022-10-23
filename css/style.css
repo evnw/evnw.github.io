@@ -118,6 +118,15 @@ footer {
     text-align: center;
 }
 
+#proj a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+#proj a:hover {
+    color: white;
+}
+
 video {
     width: 480px;
 }
@@ -125,5 +134,15 @@ video {
 @media only screen and (max-width: 600px) {
     video {
         width: 240px;
+    }
+
+    #about {
+        width: 300px;
+    }
+
+    #intro {
+        margin-top: 5%;
+        width: 300px;
+        float: left;
     }
 }

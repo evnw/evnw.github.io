@@ -4,6 +4,7 @@ body {
     color: whitesmoke;
     background-color: rgb(50, 50, 50);
     /* text-rendering: optimizeLegibility; */
+    height: 100%;
     padding: 0;
     margin: 0;
 }
@@ -105,9 +106,11 @@ body {
 }
 
 footer {
-    position: absolute;
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 40px;
     font-size: 0.8em;
-    bottom: 40px;
+    bottom: 0;
     width: 100%;
     color: gray;
     text-align: center;

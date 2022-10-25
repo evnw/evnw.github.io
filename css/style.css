@@ -148,4 +148,11 @@ video {
         width: 300px;
         float: left;
     }
+
+    .menu li {
+        display: inline;
+        margin-right: 30px;
+        list-style-type: none;
+        cursor: pointer;
+    }
 }

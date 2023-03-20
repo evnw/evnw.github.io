@@ -155,8 +155,4 @@ video {
         list-style-type: none;
         cursor: pointer;
     }
-
-    #feat {
-        float: left;
-    }
 }

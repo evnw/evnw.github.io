@@ -5,6 +5,7 @@ body {
     background-color: rgb(50, 50, 50);
     /* text-rendering: optimizeLegibility; */
     height: 100%;
+    width: 100%;
     padding: 0;
     margin: 0;
 }
@@ -28,7 +29,9 @@ body {
 }
 
 .menu {
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
 }
 
 .menu li {
@@ -39,24 +42,24 @@ body {
 }
 
 #content {
-    margin: 5% 0% 0% 15%;
-    display: inline-block;
+    margin: 5% 15% 0% 15%;
+    display: flex;
 }
 
 #content > div {
-    float: left;
-    position: relative;
-    margin-right: 60px;
+    flex: 1;
 }
 
 #intro {
     margin-top: 5%;
-    width: 400px;
-    float: left;
 }
 
-#feat {
-    float: left;
+#intro > * {
+    width: 75%;
+}
+
+#feat > * {
+    margin-left: 0%;
 }
 
 .btns {
@@ -93,7 +96,7 @@ body {
 }
 
 #about {
-    width: 500px;
+    margin-right: 50%;
 }
 
 #about a {

@@ -10,44 +10,13 @@ body {
     margin: 0;
 }
 
-#name {
-    font-size: 1.75em;
-    font-weight: 1000;
-}
-
-.header {
-    margin: 5% 15% 0% 15%;
-}
-
-.header a {
-    text-decoration: none;
-    color: lightgray;
-}
-
-.header a:hover {
-    color: white;
-}
-
-.menu {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
-
-.menu li {
-    display: inline;
-    margin-right: 50px;
-    list-style-type: none;
-    cursor: pointer;
-}
-
-#content {
-    margin: 5% 15% 0% 15%;
+#about {
+    margin: 7.5% 25% 0% 25%;
     display: flex;
     flex-wrap: wrap;
 }
 
-#content > div {
+#about > div {
     flex: 1;
 }
 
@@ -55,12 +24,17 @@ body {
     margin-top: 5%;
 }
 
-#intro > * {
-    width: 75%;
+a {
+    text-decoration: none;
 }
 
 #feat > * {
     margin-left: 0%;
+    float: right;
+}
+
+#projects {
+    margin: 0% 25% 0% 25%;
 }
 
 .btns {
@@ -84,78 +58,66 @@ body {
     color: white;
 }
 
-.works img {
-    max-width: 300px;
-    max-height: 169px;
-    border: 1px groove lightgray;
+.proj_btns {
+    padding-left: 0;
 }
 
-.works {
-    text-decoration: none;
+.proj_btns li {
+    display: inline;
+    margin-right: 10%;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.proj_btns a {
+    text-decoration:none;
+    border-bottom: 1px dashed plum;
     color: lightgray;
 }
 
-#about {
-    margin-right: 50%;
-}
-
-#about a {
-    text-decoration: none;
-    color: lightgray;
-}
-
-#about a:hover {
+.proj_btns a:hover {
     color: white;
+    border-bottom: 1px solid plum;
+}
+
+.projDescription {
+    padding-top: 1%;
 }
 
 footer {
-    position: relative;
-    margin-top: 80px;
-    margin-bottom: 40px;
-    font-size: 0.8em;
+    position: fixed;
+    left: 0;
     bottom: 0;
     width: 100%;
-    color: gray;
     text-align: center;
 }
 
-#proj {
-    margin: 5% 20% 0% 20%;
-    text-align: center;
-}
-
-#proj a {
-    text-decoration: none;
-    color: lightgray;
-}
-
-#proj a:hover {
-    color: white;
-}
-
-video {
-    width: 480px;
-}
-
-@media only screen and (max-width: 600px) {
-    video {
-        width: 240px;
-    }
-
+@media only screen and (max-width: 1100px) {
     #about {
-        width: 300px;
+        margin: 0% 10% 0% 10%;
     }
 
     #intro {
-        margin-top: 5%;
-        width: 300px;
-        float: left;
+        margin-top: 0%;
     }
 
-    .menu li {
-        display: inline;
-        margin-right: 30px;
+    #projects {
+        margin: 0% 10% 0% 10%;
+    }
+
+    #feat {
+        display: none;
+    }
+
+    .proj_btns {
+        padding-left: 0;
+    }
+
+    .proj_btns li {
+        display: block;
+        margin-right: 15%;
         list-style-type: none;
         cursor: pointer;
     }
+    
 }

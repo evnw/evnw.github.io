@@ -2,54 +2,45 @@
 <html lang="en">
 
 <head>
-    <title>Evan Willcocks - Work</title>
+    <title>Naturalistic Driving App</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=yes">
 
-    <!-- Font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700">
-
-    <!-- Brand Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
     <!-- Styles -->
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/proj.css">
 
     <!-- Icon -->
     <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header class="header">
-        <ul class="menu">
-            <li id="name"><a href="../../index.html">Evan</a></li>
-            <li><a href="../../work.html">Work</a></li>
-            <li><a href="../../about.html">About</a></li>
-        </ul>
-    </header>
-
-    <div id="proj">
+    <div id="content">
         <h1>Naturalistic Driving App</h1>
-        <p style="text-align: justify;">
-            This app was developed as a capstone project using React Native Expo for the Western Australia Centre for Road Safety Research
-            (<b><em><a style="color: royalblue;" href="https://www.uwa.edu.au/institutes/wa-centre-for-road-safety-research/Home"target="_blank">WACRSR</a></em></b>).
-            It since has been used to collect data for naturalistic driving studies.
-
-            It collects user GPS and high frequency accelerometer data, securely transmitting it to a
-            <b><em><a style="color: coral;" href="https://firebase.google.com/docs/firestore" target="_blank">Cloud Firestore</a></em></b>
-            database with user consent.
-            Additional features include user info collection, a statistics page, and a tutorial.
-        </p>
-        <video style="border: 1px groove lightgray;" controls>
-            <source src="demo-db.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <h2>Screens/Views</h2>
+        <div id="screenshots">
+            <img src="./loading.jpg">
+            <img src="./privacy.jpg">
+            <img src="./user_info.jpg">
+            <img src="./home.jpg">
+            <img src="./tutorial.jpg">
+            <img src="./trip_ongoing.jpg">
+            <img src="./trip_end.jpg">
+            <img src="./stats.jpg">
+        </div>
+        <div id="flow_pics">
+            <div>
+                <h2>User Flow</h2>
+                <img src="./UserFlow.png" width="90%">
+            </div>
+            <div>
+                <h2>Data Flow</h2>
+                <br> <br>
+                <img src="./DataFlow.png" width="90%">
+            </div>
+        </div>
     </div>
 
-    <footer> <small>&copy; 2022 Evan Willcocks</small> </footer>
+    <footer> <small>&copy; 2023 evnw.github.io</small> </footer>
 </body>
 
 </html>

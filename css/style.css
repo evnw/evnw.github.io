@@ -105,6 +105,10 @@ footer {
         margin-top: 0%;
     }
 
+    #intro > * {
+        width: 100%;
+    }
+
     #projects {
         margin: 0% 10% 0% 10%;
     }

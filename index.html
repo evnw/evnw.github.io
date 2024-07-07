@@ -28,7 +28,7 @@
             <h1>Evan Willcocks</h1>
             <h2>Software Engineer</h2>
             <p>
-				Perth-based software engineering and applied mathematics graduate
+				Perth-based software engineer and data scientist
                 <br> <br>
                 Professional experience in boutique data analytics consulting at 
                 <b><em><a style="color: PowderBlue;" href="https://4cda.com" target="_blank">4CDA</a></em></b>
@@ -50,24 +50,29 @@
 		<h2>Projects</h2>
 		<hr>
         <ul class="proj_btns">
-            <li><a onclick="showText('driving-app')">Naturalistic Driving App</a></li>
+            <li><a onclick="showText('oct-image-enhance')">OCT Image Enhancement</a></li>
+            <li><a onclick="showText('qa-model')">Extractive QA Model</a></li>
             <li><a onclick="showText('hotter-colder')">Hotter/Colder</a></li>
         </ul>
         <div class="projDescription">
-            <div id="driving-app" style="display: none;">
-                <h3>Naturalistic Driving App</h3>
-                <p style="text-align: justify;">
-                    Developed as a capstone project for the Western Australian Centre for Road Safety Research
-                    (<b><em><a style="color: royalblue;" href="https://www.uwa.edu.au/institutes/wa-centre-for-road-safety-research/Home"target="_blank">WACRSR</a></em></b>)
-                    to be used in naturalistic driving studies.
-        
-                    It collects user GPS and high frequency accelerometer data, securely transmitting to
-                    <b><em><a style="color: coral;" href="https://firebase.google.com/docs/firestore" target="_blank">Cloud Firestore</a></em></b>
-                    with user consent.
-                    Additional features include user info collection, a statistics page, and a tutorial.
+            <div id="qa-model" style="display: none;">
+                <h3>Extractive QA Model</h3>
+                <p style="text-align: justify;">                    
+                    Developed as a 'Natural Language Processing' project to create a knowledge-based question answering model. It comprises a
+                    Bi-LSTM, a summary layer, and an attention layer and was utilized in attention and input embedding ablation studies.
                 </p>
                 <ul class="proj_btns">
-                    <li><b><a href="./projects/driving-app/index.html" target="_blank">View Page</a></b></li>
+                    <li><b><a href="./projects/qa-model/qa-model.pdf" target="_blank">View Report</a></b></li>
+                </ul>
+            </div>
+            <div id="oct-image-enhance" style="display: none;">
+                <h3>OCT Image Enhancement</h3>
+                <p style="text-align: justify;">
+                    Developed as an 'AI and Adaptive Systems' project focusing on enhancing OCT images using a population-based optimiser and
+                    deriving an effective objective function with the Camo Worm model.
+                </p>
+                <ul class="proj_btns">
+                    <li><b><a href="./projects/oct-image-enhance/oct-image-enhance.pdf" target="_blank">View Report</a></b></li>
                 </ul>
             </div>
             <div id="hotter-colder" style="display: none;">
@@ -83,7 +88,7 @@
         </div>
 	</div>
 
-    <footer> <small>&copy; 2023 evnw.github.io</small> </footer>
+    <footer> <small>&copy; <script>document.write(/\d{4}/.exec(Date())[0])</script> evnw.github.io</small> </footer>
 
     <script>
         function showText(proj) {
@@ -93,8 +98,9 @@
             }
             else {
                 // clear
-                document.getElementById("driving-app").style.display = "none";
+                document.getElementById("oct-image-enhance").style.display = "none";
                 document.getElementById("hotter-colder").style.display = "none";
+                document.getElementById("qa-model").style.display = "none";
                 // display
                 document.getElementById(proj).style.display = "block";
             }
